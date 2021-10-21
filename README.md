@@ -18,5 +18,7 @@ JDK --> 15
 Enunciado
 
 Ideas
+-cuando te registres meter el correo por si pierdes la contraseña 
+-enviar correo de verificación
 
 Ideas aprobadas
