@@ -10,7 +10,7 @@ Laura Paniagua --> Teaster
 
 Ana Valero --> Lider
 
-Diego Veguilla -->Jefe de Backend
+Diego Veguilla -->Jefe de Back end
 
 Cosas Importantes
 
