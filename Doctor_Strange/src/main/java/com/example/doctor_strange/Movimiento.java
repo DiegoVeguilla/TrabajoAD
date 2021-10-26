@@ -4,7 +4,7 @@ import java.util.Locale;
 
 public class Movimiento {
     //atributos
-    Personaje personaje1, personaje2; //jugador1 -> el jugador que realiza el movimiento, jugador2 -> el jugador al que se le realiza el movimiento
+    Personaje personaje1, personaje2; //jugador1 -> ejecuta, jugador2 -> recibe
     String tipo; //Ataque o defensa
     double energiaInicial, energiaReal;
     //constructor
@@ -20,6 +20,42 @@ public class Movimiento {
     }
 
     //metodos
-    //TODO revisar este metodo con diego(encargado del sector partida)
+    public void quitarEnergia(Movimiento movimiento){
+        //modificamos la energiaLucha ejecutor del movimiento
+        movimiento.getPersonaje1().setEnergiaLucha(movimiento.getPersonaje1().getEnergiaLucha() - movimiento.getEnergiaReal());
+        //modificamos la energiaVital del receptor del movimiento
+        movimiento.getPersonaje2().setEnergiaVital(movimiento.getPersonaje2().getEnergiaVital() - movimiento.getEnergiaReal());
+    }
 
+    //getters && setters
+    public Personaje getPersonaje1() {
+        return personaje1;
+    }
+    public void setPersonaje1(Personaje personaje1) {
+        this.personaje1 = personaje1;
+    }
+    public Personaje getPersonaje2() {
+        return personaje2;
+    }
+    public void setPersonaje2(Personaje personaje2) {
+        this.personaje2 = personaje2;
+    }
+    public String getTipo() {
+        return tipo;
+    }
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+    public double getEnergiaInicial() {
+        return energiaInicial;
+    }
+    public void setEnergiaInicial(double energiaInicial) {
+        this.energiaInicial = energiaInicial;
+    }
+    public double getEnergiaReal() {
+        return energiaReal;
+    }
+    public void setEnergiaReal(double energiaReal) {
+        this.energiaReal = energiaReal;
+    }
 }
