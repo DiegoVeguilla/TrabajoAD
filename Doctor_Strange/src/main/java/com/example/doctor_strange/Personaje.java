@@ -69,12 +69,15 @@ public class Personaje {
     public void setProyecEnergia(int proyecEnergia) {
         this.proyecEnergia = proyecEnergia;
     }
-    public Origen getOrigen() {
+
+    public String getOrigen() {
         return origen;
     }
-    public void setOrigen(Origen origen) {
+
+    public void setOrigen(String origen) {
         this.origen = origen;
     }
+
     public String getAlias() {
         return alias;
     }
