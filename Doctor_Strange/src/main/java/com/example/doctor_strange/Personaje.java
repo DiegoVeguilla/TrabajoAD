@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Personaje {
     //atributos
     int identificador, coste, recompensa, inteligencia, fuerza, velocidad, resistencia, habLucha, proyecEnergia;
-    String origen;
+    String origen, tipo;
     String alias, identidadSecreta, organizacion;
     ArrayList<Movimiento> listaMovimientos = null;
     double energiaVital, energiaLucha;

@@ -20,11 +20,11 @@ public class Movimiento {
     }
 
     //metodos
-    public void quitarEnergia(Movimiento movimiento){
+    public void quitarEnergia(){
         //modificamos la energiaLucha ejecutor del movimiento
-        movimiento.getPersonaje1().setEnergiaLucha(movimiento.getPersonaje1().getEnergiaLucha() - movimiento.getEnergiaReal());
+        personaje1.setEnergiaLucha(personaje1.getEnergiaLucha() - energiaReal);
         //modificamos la energiaVital del receptor del movimiento
-        movimiento.getPersonaje2().setEnergiaVital(movimiento.getPersonaje2().getEnergiaVital() - movimiento.getEnergiaReal());
+        personaje2.setEnergiaVital(personaje2.getEnergiaVital() - energiaReal);
     }
 
     //getters && setters
