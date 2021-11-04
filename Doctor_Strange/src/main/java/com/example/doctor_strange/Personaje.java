@@ -5,16 +5,21 @@ import java.util.ArrayList;
 public class Personaje {
     //atributos
     int identificador, coste, recompensa;
-    ArrayList<Integer> Poderes = new ArrayList();//, inteligencia, fuerza, velocidad, resistencia, habLucha, proyecEnergia
+    ArrayList<Integer> Poderes = new ArrayList(); //inteligencia, fuerza, velocidad, resistencia, habLucha, proyecEnergia
     String origen, tipo;
     String alias, identidadSecreta, organizacion;
     ArrayList<Movimiento> listaMovimientos = null;
     double energiaVital, energiaLucha;
     //constructor
 
-    public Personaje() {}
+    public Personaje(int identificador) {
+        //TODO crear el superheroe a traves del JSON
+
+    }
 
     //metodos
+
+
 
     //getters && setter
     public int getIdentificador() {

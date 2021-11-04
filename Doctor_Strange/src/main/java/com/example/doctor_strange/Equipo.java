@@ -8,8 +8,8 @@ public class Equipo {
     ArrayList<Personaje> personajes = null;
     //constructor
     public Equipo(){}
-    /*public Equipo(int numPersonajes) {
+    public Equipo(int numPersonajes) {
         this.numPersonajes = numPersonajes;
-    }*/
+    }
     //metodos
 }

@@ -13,9 +13,9 @@ public class Movimiento {
         this.personaje1=personaje1;
         this.personaje2=personaje2;
         if (tipo.toLowerCase().equals("ataque")){
-            energiaReal=((personaje1.getFuerza()*0.8)+(personaje1.getVelocidad()*0.25)+(personaje1.getHabLucha()*0.75)+(personaje1.getProyecEnergia()*1));
+            //energiaReal=((personaje1.getFuerza()*0.8)+(personaje1.getVelocidad()*0.25)+(personaje1.getHabLucha()*0.75)+(personaje1.getProyecEnergia()*1));
         }else {
-            energiaReal=((personaje1.getInteligencia()*1)+(personaje1.getVelocidad()*0.75)+(personaje1.getHabLucha()*0.25)+(personaje1.getFuerza()*0.20));
+            //energiaReal=((personaje1.getInteligencia()*1)+(personaje1.getVelocidad()*0.75)+(personaje1.getHabLucha()*0.25)+(personaje1.getFuerza()*0.20));
         }
     }
 
