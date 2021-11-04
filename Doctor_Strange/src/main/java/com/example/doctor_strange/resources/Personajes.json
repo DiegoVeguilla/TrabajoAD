@@ -1,0 +1,359 @@
+[
+  {
+    "Identificador": "01",
+    "Alias": "Doctor Strange",
+    "IdentidadSecreta": "Stephen Strange",
+    "Origen": "Humano Magico",
+    "Tipo": "Heroe",
+    "Organizacion": "Strange Academy",
+    "Poderes": [
+      {
+        "Inteligencia": 4,
+        "Fuerza": 2,
+        "Velocidad": 2,
+        "Resistencia": 2,
+        "ProyecEnergia": 6,
+        "HabLucha": 6
+      }
+    ],
+    "ListaPoderes": null,
+    "EnergiaVital": null,
+    "enrgiaLucha": null
+  },
+  {
+    "Identificador": "02",
+    "Alias": "Scarlet Witch",
+    "IdentidadSecreta": "Wanda Maximoff",
+    "Origen": "Humano Magico",
+    "Tipo": "Heroe",
+    "Organizacion": "Strange Academy",
+    "Poderes": [
+      {
+        "Inteligencia": 3,
+        "Fuerza": 2,
+        "Velocidad": 2,
+        "Resistencia": 2,
+        "ProyecEnergia": 6,
+        "HabLucha": 3
+      }
+    ],
+    "ListaPoderes": null,
+    "EnergiaVital": null,
+    "enrgiaLucha": null
+  },
+  {
+    "Identificador": "03",
+    "Alias": "Iron Man",
+    "IdentidadSecreta": "Anthony Stark",
+    "Origen": "Humano mejorado",
+    "Tipo": "Heroe",
+    "Organizacion": "Avengers",
+    "Poderes": [
+      {
+        "Inteligencia": 6,
+        "Fuerza": 6,
+        "Velocidad": 5,
+        "Resistencia": 5,
+        "ProyecEnergia": 5,
+        "HabLucha": 6
+      }
+    ],
+    "ListaPoderes": null,
+    "EnergiaVital": null,
+    "enrgiaLucha": null
+  },
+  {
+    "Identificador": "04",
+    "Alias": "Domino",
+    "IdentidadSecreta": "Neena Thurman",
+    "Origen": "Homo superior",
+    "Tipo": "Heroe",
+    "Organizacion": "Mercs for Money",
+    "Poderes": [
+      {
+        "Inteligencia": 2,
+        "Fuerza": 2,
+        "Velocidad": 2,
+        "Resistencia": 2,
+        "ProyecEnergia": 4,
+        "HabLucha": 6
+      }
+    ],
+    "ListaPoderes": null,
+    "EnergiaVital": null,
+    "enrgiaLucha": null
+  },
+  {
+    "Identificador": "05",
+    "Alias": "Deadpool",
+    "IdentidadSecreta": "Wade Wilson",
+    "Origen": "Humano Mejorado",
+    "Tipo": "Heroe",
+    "Organizacion": "Mercs for Money",
+    "Poderes": [
+      {
+        "Inteligencia": 3,
+        "Fuerza": 2,
+        "Velocidad": 2,
+        "Resistencia": 4,
+        "ProyecEnergia": 1,
+        "HabLucha": 5
+      }
+    ],
+    "ListaPoderes": null,
+    "EnergiaVital": null,
+    "enrgiaLucha": null
+  },
+  {
+    "Identificador": "06",
+    "Alias": "Capitan America",
+    "IdentidadSecreta": "Steve Rogers",
+    "Origen": "Humano mejorado",
+    "Tipo": "Heroe",
+    "Organizacion": "Avengers",
+    "Poderes": [
+      {
+        "Inteligencia": 3,
+        "Fuerza": 3,
+        "Velocidad": 2,
+        "Resistencia": 3,
+        "ProyecEnergia": 5,
+        "HabLucha": 1
+      }
+    ],
+    "ListaPoderes": null,
+    "EnergiaVital": null,
+    "enrgiaLucha": null
+  },
+  {
+    "Identificador": "07",
+    "Alias": "Black Widow",
+    "IdentidadSecreta": "Natalia Romanova",
+    "Origen": "Humano mejorado",
+    "Tipo": "Heroe",
+    "Organizacion": "Avengers",
+    "Poderes": [
+      {
+        "Inteligencia": 5,
+        "Fuerza": 5,
+        "Velocidad": 4,
+        "Resistencia": 5,
+        "ProyecEnergia": 5,
+        "HabLucha": 6
+      }
+    ],
+    "ListaPoderes": null,
+    "EnergiaVital": null,
+    "enrgiaLucha": null
+  },
+  {
+    "Identificador": "08",
+    "Alias": "Magneto",
+    "IdentidadSecreta": "Eric Lensher",
+    "Origen": "Homo superior",
+    "Tipo": "Heroe",
+    "Organizacion": "X-Men",
+    "Poderes": [
+      {
+        "Inteligencia": 5,
+        "Fuerza": 2,
+        "Velocidad": 5,
+        "Resistencia": 2,
+        "ProyecEnergia": 6,
+        "HabLucha": 4
+      }
+    ],
+    "ListaPoderes": null,
+    "EnergiaVital": null,
+    "enrgiaLucha": null
+  },
+  {
+    "Identificador": "09",
+    "Alias": "Wolverine",
+    "IdentidadSecreta": "James Howlett",
+    "Origen": "Homo superior",
+    "Tipo": "Heroe",
+    "Organizacion": "X-Men",
+    "Poderes": [
+      {
+        "Inteligencia": 3,
+        "Fuerza": 5,
+        "Velocidad": 3,
+        "Resistencia": 4,
+        "ProyecEnergia": 3,
+        "HabLucha": 5
+      }
+    ],
+    "ListaPoderes": null,
+    "EnergiaVital": null,
+    "enrgiaLucha": null
+  },
+  {
+    "Identificador": "10",
+    "Alias": "Marvel Girl",
+    "IdentidadSecreta": "Jean Grey",
+    "Origen": "Homo superior",
+    "Tipo": "Heroe",
+    "Organizacion": "X-Men",
+    "Poderes": [
+      {
+        "Inteligencia": 3,
+        "Fuerza": 2,
+        "Velocidad": 3,
+        "Resistencia": 2,
+        "ProyecEnergia": 6,
+        "HabLucha": 4
+      }
+    ],
+    "ListaPoderes": null,
+    "EnergiaVital": null,
+    "enrgiaLucha": null
+  },
+  {
+    "Identificador": "11",
+    "Alias": "Storm",
+    "IdentidadSecreta": "Ororo Munrow",
+    "Origen": "Homo superior",
+    "Tipo": "Heroe",
+    "Organizacion": "X-Men",
+    "Poderes": [
+      {
+        "Inteligencia": 3,
+        "Fuerza": 2,
+        "Velocidad": 3,
+        "Resistencia": 2,
+        "ProyecEnergia": 5,
+        "HabLucha": 4
+      }
+    ],
+    "ListaPoderes": null,
+    "EnergiaVital": null,
+    "enrgiaLucha": null
+  },
+  {
+    "Identificador": "12",
+    "Alias": "Spiderman",
+    "IdentidadSecreta": "Peter Parker",
+    "Origen": "Humano mutado",
+    "Tipo": "Heroe",
+    "Organizacion": "Leage of Realms",
+    "Poderes": [
+      {
+        "Inteligencia": 10,
+        "Fuerza": 10,
+        "Velocidad": 10,
+        "Resistencia": 10,
+        "ProyecEnergia": 10,
+        "HabLucha": 10
+      }
+    ],
+    "ListaPoderes": null,
+    "EnergiaVital": null,
+    "enrgiaLucha": null
+  },
+  {
+    "Identificador": "13",
+    "Alias": "Hulk",
+    "IdentidadSecreta": "Bruce Banner",
+    "Origen": "Humano mutado",
+    "Tipo": "Heroe",
+    "Organizacion": "Avenger",
+    "Poderes": [
+      {
+        "Inteligencia": 3,
+        "Fuerza": 7,
+        "Velocidad": 3,
+        "Resistencia": 5,
+        "ProyecEnergia": 1,
+        "HabLucha": 4
+      }
+    ],
+    "ListaPoderes": null,
+    "EnergiaVital": null,
+    "enrgiaLucha": null
+  },
+  {
+    "Identificador": "14",
+    "Alias": "Captain Marvel",
+    "IdentidadSecreta": "Carol Danvers",
+    "Origen": "Kree",
+    "Tipo": "Heroe",
+    "Organizacion": "A-Force",
+    "Poderes": [
+      {
+        "Inteligencia": 4,
+        "Fuerza": 5,
+        "Velocidad": 5,
+        "Resistencia": 6,
+        "ProyecEnergia": 5,
+        "HabLucha": 4
+      }
+    ],
+    "ListaPoderes": null,
+    "EnergiaVital": null,
+    "enrgiaLucha": null
+  },
+  {
+    "Identificador": "15",
+    "Alias": "She-Hulk",
+    "IdentidadSecreta": "Jennifer Walters",
+    "Origen": "Humano mutado",
+    "Tipo": "Heroe",
+    "Organizacion": "A-Force",
+    "Poderes": [
+      {
+        "Inteligencia": 3,
+        "Fuerza": 7,
+        "Velocidad": 3,
+        "Resistencia": 5,
+        "ProyecEnergia": 1,
+        "HabLucha": 4
+      }
+    ],
+    "ListaPoderes": null,
+    "EnergiaVital": null,
+    "enrgiaLucha": null
+  },
+  {
+    "Identificador": "16",
+    "Alias": "Thor",
+    "IdentidadSecreta": "Thor Odinson",
+    "Origen": "Asgardiano",
+    "Tipo": "Heroe",
+    "Organizacion": "Leage of Realms",
+    "Poderes": [
+      {
+        "Inteligencia": 2,
+        "Fuerza": 7,
+        "Velocidad": 7,
+        "Resistencia": 6,
+        "ProyecEnergia": 6,
+        "HabLucha": 4
+      }
+    ],
+    "ListaPoderes": null,
+    "EnergiaVital": null,
+    "enrgiaLucha": null
+  },
+  {
+    "Identificador": "17",
+    "Alias": "Hunter Angel",
+    "IdentidadSecreta": "Aldrif Odinsdottir",
+    "Origen": "Asgardiano",
+    "Tipo": "Heroe",
+    "Organizacion": "League of Realms",
+    "Poderes": [
+      {
+        "Inteligencia": 2,
+        "Fuerza": 7,
+        "Velocidad": 3,
+        "Resistencia": 3,
+        "ProyecEnergia": 1,
+        "HabLucha": 6
+      }
+    ],
+    "ListaPoderes": null,
+    "EnergiaVital": null,
+    "enrgiaLucha": null
+  }
+]
