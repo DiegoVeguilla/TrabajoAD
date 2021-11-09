@@ -4,17 +4,24 @@ import java.util.ArrayList;
 
 public class Personaje {
     //atributos
-    int identificador, coste, recompensa, inteligencia, fuerza, velocidad, resistencia, habLucha, proyecEnergia;
-    String origen;
+    int identificador, coste, recompensa;
+    ArrayList<Integer> Poderes = new ArrayList(); //inteligencia, fuerza, velocidad, resistencia, habLucha, proyecEnergia
+    String origen, tipo;
     String alias, identidadSecreta, organizacion;
     ArrayList<Movimiento> listaMovimientos = null;
     double energiaVital, energiaLucha;
-
     //constructor
-    public Personaje(){}
+
+    public Personaje(int identificador) {
+        //TODO crear el superheroe a traves del JSON
+
+    }
+
     //metodos
 
-    //getters && setters
+
+
+    //getters && setter
     public int getIdentificador() {
         return identificador;
     }
@@ -33,46 +40,10 @@ public class Personaje {
     public void setRecompensa(int recompensa) {
         this.recompensa = recompensa;
     }
-    public int getInteligencia() {
-        return inteligencia;
-    }
-    public void setInteligencia(int inteligencia) {
-        this.inteligencia = inteligencia;
-    }
-    public int getFuerza() {
-        return fuerza;
-    }
-    public void setFuerza(int fuerza) {
-        this.fuerza = fuerza;
-    }
-    public int getVelocidad() {
-        return velocidad;
-    }
-    public void setVelocidad(int velocidad) {
-        this.velocidad = velocidad;
-    }
-    public int getResistencia() {
-        return resistencia;
-    }
-    public void setResistencia(int resistencia) {
-        this.resistencia = resistencia;
-    }
-    public int getHabLucha() {
-        return habLucha;
-    }
-    public void setHabLucha(int habLucha) {
-        this.habLucha = habLucha;
-    }
-    public int getProyecEnergia() {
-        return proyecEnergia;
-    }
-    public void setProyecEnergia(int proyecEnergia) {
-        this.proyecEnergia = proyecEnergia;
-    }
-    public Origen getOrigen() {
+    public String getOrigen() {
         return origen;
     }
-    public void setOrigen(Origen origen) {
+    public void setOrigen(String origen) {
         this.origen = origen;
     }
     public String getAlias() {
@@ -106,6 +77,4 @@ public class Personaje {
         this.energiaLucha = energiaLucha;
     }
 
-    //peronsajes
-    Personaje doctorStrange = new Personaje();
 }
