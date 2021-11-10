@@ -78,8 +78,8 @@
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
-                                    <groupId>com.github.jsimone</groupId>
-                                    <artifactId>webapp-runner</artifactId>
+                                    <groupId>com.example.doctor_strange</groupId>
+                                    <artifactId>Doctor_strange</artifactId>
                                     <version>8.5.31.0</version>
                                     <destFileName>webapp-runner.jar</destFileName>
                                 </artifactItem>
