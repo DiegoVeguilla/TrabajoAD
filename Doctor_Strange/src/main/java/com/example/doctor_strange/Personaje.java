@@ -14,9 +14,8 @@ public class Personaje {
     //atributos
     private String alias, identidadSecreta, organizacion, tipo, origen;
     private int identificador, coste, energiaVital, energiaLucha, numMovimientos;
-    //private ArrayList<Movimiento> movimientos;
     private ArrayList<Integer> poderes;
-    private int inteligencia, fuerza, velocidad, resistencia, proyecEnergia, habLucha;
+    private double inteligencia, fuerza, velocidad, resistencia, proyecEnergia, habLucha;
     FileReader lector = null;
 
     //constructor
@@ -98,6 +97,13 @@ public class Personaje {
         energiaLucha = escenario.getNumMovimientos()*150;
         numMovimientos = escenario.getNumMovimientos();
     }
+    public void realizarMovimiento(){
+        numMovimientos --;
+        String tipo = "ataque"; //"ataque" / "defensa"
+        //todo pedir por la interfaz el tipo de movimiento
+        //Movimiento movimiento = new Movimiento(tipo );
+
+    }
 
     //getters && setters
     public String getAlias() {
@@ -151,43 +157,49 @@ public class Personaje {
     public int getEnergiaLucha() {
         return energiaLucha;
     }
-    public void setEnergiaLucha(int eneregisLucha) {
-        this.energiaLucha = eneregisLucha;
+    public void setEnergiaLucha(int energiaLucha) {
+        this.energiaLucha = energiaLucha;
     }
-    public int getInteligencia() {
+    public int getNumMovimientos() {
+        return numMovimientos;
+    }
+    public void setNumMovimientos(int numMovimientos) {
+        this.numMovimientos = numMovimientos;
+    }
+    public double getInteligencia() {
         return inteligencia;
     }
-    public void setInteligencia(int inteligencia) {
+    public void setInteligencia(double inteligencia) {
         this.inteligencia = inteligencia;
     }
-    public int getFuerza() {
+    public double getFuerza() {
         return fuerza;
     }
-    public void setFuerza(int fuerza) {
+    public void setFuerza(double fuerza) {
         this.fuerza = fuerza;
     }
-    public int getVelocidad() {
+    public double getVelocidad() {
         return velocidad;
     }
-    public void setVelocidad(int velocidad) {
+    public void setVelocidad(double velocidad) {
         this.velocidad = velocidad;
     }
-    public int getResistencia() {
+    public double getResistencia() {
         return resistencia;
     }
-    public void setResistencia(int resistencia) {
+    public void setResistencia(double resistencia) {
         this.resistencia = resistencia;
     }
-    public int getProyecEnergia() {
+    public double getProyecEnergia() {
         return proyecEnergia;
     }
-    public void setProyecEnergia(int proyecEnergia) {
+    public void setProyecEnergia(double proyecEnergia) {
         this.proyecEnergia = proyecEnergia;
     }
-    public int getHabLucha() {
+    public double getHabLucha() {
         return habLucha;
     }
-    public void setHabLucha(int habLucha) {
+    public void setHabLucha(double habLucha) {
         this.habLucha = habLucha;
     }
     public ArrayList<Integer> getPoderes() {

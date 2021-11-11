@@ -6,7 +6,7 @@ public class Escenario {
     private int id, numPersonajes, numMovimientos, recompensa;
 
     //constructor
-
+    
 
     //getters && setters
     public String getNombre() {
