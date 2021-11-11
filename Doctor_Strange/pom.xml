@@ -38,6 +38,13 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version>
+            <scope>maven-plugin</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -58,11 +65,13 @@
                 <executions>
                     <execution>
                         <phase>package</phase>
-                        <goals><goal>copy</goal></goals>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
-                                    <groupId>com.github.jsimone</groupId>
+                                    <groupId>com.github.DiegoVeguilla/TrabajoAD</groupId>
                                     <artifactId>webapp-runner</artifactId>
                                     <version>8.5.31.0</version>
                                     <destFileName>webapp-runner.jar</destFileName>
