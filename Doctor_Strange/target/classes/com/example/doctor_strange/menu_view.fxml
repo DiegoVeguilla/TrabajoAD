@@ -3,49 +3,53 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Glow?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane prefHeight="1440.0" prefWidth="2560.0" styleClass="background" stylesheets="@../../../css/Style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.doctor_strange.MenuController">
+<BorderPane prefHeight="1080.0" prefWidth="1920.0" styleClass="backgroundMenu" stylesheets="@../../../css/Style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.doctor_strange.controllers.MenuController">
    <center>
-      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+      <VBox alignment="CENTER" BorderPane.alignment="CENTER">
          <children>
-            <Button minHeight="55.0" minWidth="410.0" mnemonicParsing="false" opacity="0.88" prefHeight="50.0" prefWidth="120.0" text="Button">
+            <Button minHeight="40.0" minWidth="300.0" mnemonicParsing="false" opacity="0.53" prefHeight="40.0" prefWidth="120.0" text="Nueva partida">
                <VBox.margin>
-                  <Insets bottom="32.0" />
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect></Button>
+            <Button minHeight="40.0" minWidth="330.0" mnemonicParsing="false" opacity="0.72" prefHeight="40.0" prefWidth="130.0" text="Cargar Partida">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
                </VBox.margin>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button minHeight="55.0" minWidth="430.0" mnemonicParsing="false" opacity="0.83" prefHeight="50.0" prefWidth="130.0" text="Button">
+            <Button maxHeight="15.0" minHeight="40.0" minWidth="130.0" mnemonicParsing="false" opacity="0.93" prefHeight="40.0" text="Perfil">
                <VBox.margin>
-                  <Insets bottom="30.0" />
+                  <Insets bottom="25.0" />
                </VBox.margin>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button maxHeight="15.0" minHeight="50.0" minWidth="180.0" mnemonicParsing="false" opacity="0.7" prefHeight="50.0" text="Button">
+            <Button maxHeight="65.0" minHeight="40.0" minWidth="170.0" mnemonicParsing="false" opacity="0.69" prefHeight="40.0" prefWidth="65.0" text="Ranking">
                <VBox.margin>
-                  <Insets bottom="35.0" />
+                  <Insets bottom="25.0" />
                </VBox.margin>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button maxHeight="65.0" minHeight="50.0" minWidth="220.0" mnemonicParsing="false" opacity="0.55" prefHeight="50.0" prefWidth="65.0" text="Button">
+            <Button minHeight="40.0" minWidth="350.0" mnemonicParsing="false" opacity="0.59" prefHeight="40.0" prefWidth="140.0" text="Reglas del Juego">
                <VBox.margin>
-                  <Insets bottom="38.0" />
+                  <Insets bottom="25.0" />
                </VBox.margin>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button minHeight="50.0" minWidth="500.0" mnemonicParsing="false" opacity="0.72" prefHeight="50.0" prefWidth="140.0" text="Button">
-               <VBox.margin>
-                  <Insets bottom="38.0" />
-               </VBox.margin>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor></Button>
-            <Button maxHeight="15.0" minHeight="50.0" minWidth="150.0" mnemonicParsing="false" opacity="0.86" prefHeight="15.0" text="Button">
+            <Button maxHeight="15.0" minHeight="40.0" minWidth="120.0" mnemonicParsing="false" opacity="0.67" prefHeight="40.0" text="Salir">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>

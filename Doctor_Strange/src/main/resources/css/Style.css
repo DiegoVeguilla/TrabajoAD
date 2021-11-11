@@ -1,5 +1,23 @@
-.background{
-    -fx-background-image: url("Menu.jpg");
+.backgroundMenu{
+    -fx-background-image: url("images/Menu.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+.backgroundInicio{
+    -fx-background-image: url("images/Inicio.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+.backgroundRegistro{
+    -fx-background-image: url("images/Registro.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+.backgroundIniciar{
+    -fx-background-image: url("images/IniciarSesion.jpg");
     -fx-background-repeat: no-repeat;
     -fx-background-size: cover;
     -fx-background-position: center;
