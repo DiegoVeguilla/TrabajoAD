@@ -2,20 +2,24 @@ package com.example.doctor_strange;
 
 public class Escenario {
     //atributos
-    String nombre;
-    int numPersonajes, numMonedas, numMovimientos;
+    private String nombre;
+    private int id, numPersonajes, numMovimientos, recompensa;
 
     //constructor
-    public Escenario() {}
 
-    //métodos
 
-    //getters && sertters
+    //getters && setters
     public String getNombre() {
         return nombre;
     }
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
     }
     public int getNumPersonajes() {
         return numPersonajes;
@@ -23,16 +27,16 @@ public class Escenario {
     public void setNumPersonajes(int numPersonajes) {
         this.numPersonajes = numPersonajes;
     }
-    public int getNumMonedas() {
-        return numMonedas;
-    }
-    public void setNumMonedas(int numMonedas) {
-        this.numMonedas = numMonedas;
-    }
     public int getNumMovimientos() {
         return numMovimientos;
     }
     public void setNumMovimientos(int numMovimientos) {
         this.numMovimientos = numMovimientos;
+    }
+    public int getRecompensa() {
+        return recompensa;
+    }
+    public void setRecompensa(int recompensa) {
+        this.recompensa = recompensa;
     }
 }

@@ -1,42 +1,27 @@
 package com.example.doctor_strange;
 
+import java.util.Scanner;
+
 public class Partida {
     //atributos
-    int identificador;
-    Jugador jugador1, jugador2;
-    Escenario escenario;
+    private Scanner teclado = new Scanner(System.in);
+    private int id;
+    private Jugador jugador1, jugador2, ganador;
+    private Escenario escenario;
+
     //constructor
-    public Partida(){}
     public Partida(Jugador jugador1, Jugador jugador2, Escenario escenario) {
         this.jugador1 = jugador1;
         this.jugador2 = jugador2;
         this.escenario = escenario;
     }
-    //métodos
 
-    //getters && setters
-    public int getIdentificador() {
-        return identificador;
+    //metodos
+    public void jugarPartida(){
+        generarEquipo(escenario,jugador1); //generamos el equipo del jugador 1
+        generarEquipo(escenario,jugador2); //generamos el equipo del jugador 2
     }
-    public void setIdentificador(int identificador) {
-        this.identificador = identificador;
-    }
-    public Jugador getJugador1() {
-        return jugador1;
-    }
-    public void setJugador1(Jugador jugador1) {
-        this.jugador1 = jugador1;
-    }
-    public Jugador getJugador2() {
-        return jugador2;
-    }
-    public void setJugador2(Jugador jugador2) {
-        this.jugador2 = jugador2;
-    }
-    public Escenario getEscenario() {
-        return escenario;
-    }
-    public void setEscenario(Escenario escenario) {
-        this.escenario = escenario;
+    public void generarEquipo(Escenario escenario, Jugador jugador){
+        jugador.crearEquipo(escenario.getNumPersonajes());
     }
 }
