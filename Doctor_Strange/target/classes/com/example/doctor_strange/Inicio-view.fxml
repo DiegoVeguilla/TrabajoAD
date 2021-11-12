@@ -14,6 +14,9 @@
                <VBox.margin>
                   <Insets bottom="26.0" />
                </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
             <Button centerShape="false" mnemonicParsing="false" opacity="0.0" prefHeight="50.0" prefWidth="300.0" text="Registrarse">
                <VBox.margin>

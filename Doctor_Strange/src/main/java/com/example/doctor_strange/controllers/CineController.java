@@ -6,14 +6,22 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
 import javafx.stage.Stage;
-
+import javafx.application.Preloader;
+import javafx.application.Preloader.StateChangeNotification.Type;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Region;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 import java.io.File;
 import java.net.MalformedURLException;
 
-public class CineController {
+public class CineController   {
 
 
-    public void empezarCine(Stage stage, Boolean acaba) {
+    public void empezarCine(Stage stage) {
         File mediaFile = new File("src/main/resources/css/images/Cine.mp4");
         Media media = null;
         try {
@@ -39,6 +47,8 @@ public class CineController {
         stage.show();
         mediaPlayer.play();
         mediaPlayer.setOnReady(mediaPlayer.getOnEndOfMedia());
-        acaba = true;
+
     }
+
+
 }

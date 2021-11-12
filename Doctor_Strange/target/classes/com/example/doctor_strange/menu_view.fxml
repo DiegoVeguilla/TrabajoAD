@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane prefHeight="1080.0" prefWidth="1920.0" styleClass="backgroundMenu" stylesheets="@../../../css/Style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.doctor_strange.controllers.MenuController">
+<BorderPane minHeight="100.0" minWidth="100.0" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-size: cover,auto;" styleClass="backgroundMenu" stylesheets="@../../../css/Style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.doctor_strange.controllers.MenuController">
    <center>
       <VBox alignment="CENTER" BorderPane.alignment="CENTER">
          <children>

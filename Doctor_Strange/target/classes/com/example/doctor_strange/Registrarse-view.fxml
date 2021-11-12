@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.doctor_strange.controllers.RegistrarseController"
-            prefHeight="400.0" prefWidth="600.0">
 
-</AnchorPane>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" styleClass="backgroundRegistro" stylesheets="@../../../css/Style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="textUsuario" maxWidth="200.0" minWidth="242.0" prefWidth="250.0" promptText="Usuario">
+               <VBox.margin>
+                  <Insets bottom="45.0" right="165.0" top="105.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="textContrasenia" maxWidth="200.0" minWidth="242.0" prefWidth="250.0" promptText="Contraseña">
+               <VBox.margin>
+                  <Insets bottom="50.0" right="165.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="textConfirContrasenia" maxWidth="200.0" minWidth="242.0" prefWidth="250.0" promptText="Confirmar Contraseña">
+               <VBox.margin>
+                  <Insets bottom="50.0" right="165.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="btnLoginR" minHeight="30.0" minWidth="68.0" mnemonicParsing="false" opacity="0.58" text="Button">
+               <VBox.margin>
+                  <Insets right="160.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets top="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>

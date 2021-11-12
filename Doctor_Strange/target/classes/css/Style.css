@@ -1,8 +1,9 @@
 .backgroundMenu{
     -fx-background-image: url("images/Menu.jpg");
     -fx-background-repeat: no-repeat;
-    -fx-background-size: cover;
+    -fx-background-size: contain;
     -fx-background-position: center;
+
 }
 .backgroundInicio{
     -fx-background-image: url("images/Inicio.jpg");
