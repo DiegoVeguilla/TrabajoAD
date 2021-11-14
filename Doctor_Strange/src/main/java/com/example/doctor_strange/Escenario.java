@@ -3,10 +3,10 @@ package com.example.doctor_strange;
 public class Escenario {
     //atributos
     private String nombre;
-    private int id, numPersonajes, numMovimientos, recompensa;
+    private int id, numPersonajes, numMovimientos, recompensa, energiaVitalPersonaje;
 
     //constructor
-    
+
 
     //getters && setters
     public String getNombre() {
@@ -38,5 +38,11 @@ public class Escenario {
     }
     public void setRecompensa(int recompensa) {
         this.recompensa = recompensa;
+    }
+    public int getEnergiaVitalPersonaje() {
+        return energiaVitalPersonaje;
+    }
+    public void setEnergiaVitalPersonaje(int energiaVitalPersonaje) {
+        this.energiaVitalPersonaje = energiaVitalPersonaje;
     }
 }

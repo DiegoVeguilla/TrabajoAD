@@ -6,15 +6,16 @@ import java.util.Scanner;
 public class Jugador {
     //atributos
     Scanner teclado = new Scanner(System.in);
-    private String usario, contrasenia, organizacion;
+    private String usuario, contrasenia, organizacion;
     private int monedas, victorias;
     private ArrayList<Integer> personajes;
     private Equipo equipo;
+    private Personaje personajeActual;
     private int[] gemas;
 
     //constructor
     public Jugador(String usario, String contrasenia, String organizacion) {
-        this.usario = usario;
+        this.usuario = usario;
         this.contrasenia = contrasenia;
         this.organizacion = organizacion;
         personajes = new ArrayList<>();
@@ -40,16 +41,18 @@ public class Jugador {
     public void crearEquipo(int nPersonajes) {
         for (int i = 0; i < nPersonajes ; i++) {
             System.out.println("Introduzca la id del personaje");
-            equipo.addPersonaje(teclado.nextInt());
+            int id =12;
+            //todo añadir comprobacion el id debe estar en personajes
+            equipo.addPersonaje(id);
         }
     }
 
     //getters && setters
-    public String getUsario() {
-        return usario;
+    public String getUsuario() {
+        return usuario;
     }
-    public void setUsario(String usario) {
-        this.usario = usario;
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
     }
     public String getContrasenia() {
         return contrasenia;
@@ -80,5 +83,17 @@ public class Jugador {
     }
     public void setGemas(int[] gemas) {
         this.gemas = gemas;
+    }
+    public Equipo getEquipo() {
+        return equipo;
+    }
+    public void setEquipo(Equipo equipo) {
+        this.equipo = equipo;
+    }
+    public Personaje getPersonajeActual() {
+        return personajeActual;
+    }
+    public void setPersonajeActual(Personaje personajeActual) {
+        this.personajeActual = personajeActual;
     }
 }
