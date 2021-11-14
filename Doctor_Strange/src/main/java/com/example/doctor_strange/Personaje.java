@@ -14,19 +14,19 @@ public class Personaje {
     //atributos
     private String alias, identidadSecreta, organizacion, tipo, origen;
     private int identificador, coste, energiaVital, energiaLucha, numMovimientos;
-    //private ArrayList<Movimiento> movimientos;
     private ArrayList<Integer> poderes;
     private int inteligencia, fuerza, velocidad, resistencia, proyecEnergia, habLucha;
+    private Movimiento movimientoActual;
+    private boolean vivo;
     FileReader lector = null;
 
     //constructor
-    public Personaje(int identificador) {
-        this.identificador = identificador;
+    public Personaje(int id) {
+        this.identificador = id;
         try {
             File file = new File("src/resources/Personajes.txt");
             String personajes = "";
             int lecturaByte = 0;
-
 
             lector = new FileReader(file);
             while ((lecturaByte = lector.read()) != -1) {
@@ -94,9 +94,29 @@ public class Personaje {
         System.out.println("\t Habiladad de lucha: " + habLucha);
     }
     public void setEnergia(Escenario escenario){
-        energiaVital = escenario.getNumMovimientos()*150;
-        energiaLucha = escenario.getNumMovimientos()*150;
+        energiaVital = escenario.getEnergiaVitalPersonaje();
+        energiaLucha = escenario.getNumMovimientos()*5;
         numMovimientos = escenario.getNumMovimientos();
+    }
+    public void realizarMovimiento(){
+        String tipo = "ataque"; //"ataque" o "defensa"
+        //todo pedir por la interfaz el tipo de movimiento y poner energia
+        int energia = 0;
+        energiaLucha -= energia;
+        Movimiento movimiento = new Movimiento(tipo,energia,this );
+        if (movimiento.isPosible()){
+            numMovimientos --;
+            movimientoActual = movimiento;
+        }else{
+            System.out.println("Este epersonaje no puede realizar ningun movimiento porque la energia de lucha ("+energiaLucha+") es insuficiente");
+        }
+
+    }
+    public boolean estoyVivo(){
+        if (energiaVital == 0){
+            return false;
+        }
+        return true;
     }
 
     //getters && setters
@@ -151,8 +171,14 @@ public class Personaje {
     public int getEnergiaLucha() {
         return energiaLucha;
     }
-    public void setEnergiaLucha(int eneregisLucha) {
-        this.energiaLucha = eneregisLucha;
+    public void setEnergiaLucha(int energiaLucha) {
+        this.energiaLucha = energiaLucha;
+    }
+    public int getNumMovimientos() {
+        return numMovimientos;
+    }
+    public void setNumMovimientos(int numMovimientos) {
+        this.numMovimientos = numMovimientos;
     }
     public int getInteligencia() {
         return inteligencia;
@@ -196,4 +222,11 @@ public class Personaje {
     public void setPoderes(ArrayList<Integer> poderes) {
         this.poderes = poderes;
     }
+    public Movimiento getMovimientoActual() {
+        return movimientoActual;
+    }
+    public void setMovimientoActual(Movimiento movimientoActual) {
+        this.movimientoActual = movimientoActual;
+    }
 }
+
