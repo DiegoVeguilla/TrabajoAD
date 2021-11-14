@@ -14,7 +14,7 @@ public class Jugador {
     private int[] gemas;
 
     //constructor
-    public Jugador(String usario, String contrasenia, String organizacion) {
+    public Jugador(String usario, String contrasenia, String organizacion){
         this.usuario = usario;
         this.contrasenia = contrasenia;
         this.organizacion = organizacion;
@@ -24,7 +24,7 @@ public class Jugador {
             for (int i : new int[]{3, 6, 7, 13, 1, 5, 14, 15, 16, 17}) {
                 personajes.add(i);
             }
-        }else{
+        }else if (organizacion.toLowerCase().equals("x-men")){
             for (int i : new int[]{8, 9, 10, 11, 1, 5, 14, 15, 16, 17}) {
                 personajes.add(i);
             }
@@ -42,7 +42,7 @@ public class Jugador {
         for (int i = 0; i < nPersonajes ; i++) {
             System.out.println("Introduzca la id del personaje");
             int id =12;
-            //todo añadir comprobacion el id debe estar en personajes
+            //todo añadir comprobacion el id debe estar en personajes y que no se repitan
             equipo.addPersonaje(id);
         }
     }

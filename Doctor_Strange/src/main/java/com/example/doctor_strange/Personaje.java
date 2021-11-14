@@ -17,6 +17,7 @@ public class Personaje {
     private ArrayList<Integer> poderes;
     private int inteligencia, fuerza, velocidad, resistencia, proyecEnergia, habLucha;
     private Movimiento movimientoActual;
+    private boolean vivo;
     FileReader lector = null;
 
     //constructor
@@ -26,7 +27,6 @@ public class Personaje {
             File file = new File("src/resources/Personajes.txt");
             String personajes = "";
             int lecturaByte = 0;
-
 
             lector = new FileReader(file);
             while ((lecturaByte = lector.read()) != -1) {
@@ -95,21 +95,28 @@ public class Personaje {
     }
     public void setEnergia(Escenario escenario){
         energiaVital = escenario.getEnergiaVitalPersonaje();
-        energiaLucha = escenario.getNumMovimientos()*100;
+        energiaLucha = escenario.getNumMovimientos()*5;
         numMovimientos = escenario.getNumMovimientos();
     }
     public void realizarMovimiento(){
-        numMovimientos --;
         String tipo = "ataque"; //"ataque" o "defensa"
         //todo pedir por la interfaz el tipo de movimiento y poner energia
         int energia = 0;
+        energiaLucha -= energia;
         Movimiento movimiento = new Movimiento(tipo,energia,this );
         if (movimiento.isPosible()){
+            numMovimientos --;
             movimientoActual = movimiento;
         }else{
-            System.out.println("Est epersonaje no puede realizar ningun movimiento porque la energia de lucha (= "+energiaLucha+") es insuficiente");
+            System.out.println("Este epersonaje no puede realizar ningun movimiento porque la energia de lucha ("+energiaLucha+") es insuficiente");
         }
 
+    }
+    public boolean estoyVivo(){
+        if (energiaVital == 0){
+            return false;
+        }
+        return true;
     }
 
     //getters && setters
@@ -215,4 +222,11 @@ public class Personaje {
     public void setPoderes(ArrayList<Integer> poderes) {
         this.poderes = poderes;
     }
+    public Movimiento getMovimientoActual() {
+        return movimientoActual;
+    }
+    public void setMovimientoActual(Movimiento movimientoActual) {
+        this.movimientoActual = movimientoActual;
+    }
 }
+

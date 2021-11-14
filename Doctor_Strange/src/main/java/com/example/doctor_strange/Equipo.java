@@ -18,20 +18,24 @@ public class Equipo {
     public void addPersonaje(int id){
         miembrosEquipo.add(new Personaje(id));
     }
+    public boolean estamosVivos(){
+        for (Personaje personaje:miembrosEquipo) {
+            if (personaje.estoyVivo()){
+                return true;
+            }
+        }
+        return false;
+    }
     //getters && setters
-
     public int getNumPersonajes() {
         return numPersonajes;
     }
-
     public void setNumPersonajes(int numPersonajes) {
         this.numPersonajes = numPersonajes;
     }
-
     public ArrayList<Personaje> getMiembrosEquipo() {
         return miembrosEquipo;
     }
-
     public void setMiembrosEquipo(ArrayList<Personaje> miembrosEquipo) {
         this.miembrosEquipo = miembrosEquipo;
     }

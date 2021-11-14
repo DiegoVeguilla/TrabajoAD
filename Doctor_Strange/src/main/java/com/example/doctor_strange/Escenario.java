@@ -3,10 +3,12 @@ package com.example.doctor_strange;
 public class Escenario {
     //atributos
     private String nombre;
-    private int id, numPersonajes, numMovimientos, recompensa, energiaVitalPersonaje;
+    private int id, numPersonajes, numMovimientos, energiaVitalPersonaje;
 
     //constructor
-
+    public Escenario(int id){
+        //TODO crear el json y completamos el constructor
+    }
 
     //getters && setters
     public String getNombre() {
@@ -32,12 +34,6 @@ public class Escenario {
     }
     public void setNumMovimientos(int numMovimientos) {
         this.numMovimientos = numMovimientos;
-    }
-    public int getRecompensa() {
-        return recompensa;
-    }
-    public void setRecompensa(int recompensa) {
-        this.recompensa = recompensa;
     }
     public int getEnergiaVitalPersonaje() {
         return energiaVitalPersonaje;
