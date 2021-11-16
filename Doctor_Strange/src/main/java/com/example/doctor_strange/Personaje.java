@@ -14,7 +14,7 @@ public class Personaje {
     //atributos
     private String alias, identidadSecreta, organizacion, tipo, origen;
     private int identificador, coste, energiaVital, energiaLucha, numMovimientos;
-    private ArrayList<Integer> poderes;
+    private ArrayList<Integer> poderes = new ArrayList<>();
     private int inteligencia, fuerza, velocidad, resistencia, proyecEnergia, habLucha;
     private Movimiento movimientoActual;
     private boolean vivo;
@@ -22,9 +22,9 @@ public class Personaje {
 
     //constructor
     public Personaje(int id) {
-        this.identificador = id;
+        this.identificador = id-1;
         try {
-            File file = new File("src/resources/Personajes.txt");
+            File file = new File("src/main/java/com/example/doctor_strange/resources/Personajes.txt");
             String personajes = "";
             int lecturaByte = 0;
 
@@ -32,7 +32,7 @@ public class Personaje {
             while ((lecturaByte = lector.read()) != -1) {
                 personajes += (char) lecturaByte;
             }
-            JSONArray listaPersonajes = new JSONArray("src/resoures/Personajes.txt");
+            JSONArray listaPersonajes = new JSONArray(personajes);
             JSONObject personaje = listaPersonajes.getJSONObject(identificador);
             this.alias = personaje.getString("Alias");
             this.identidadSecreta = personaje.getString("IdentidadSecreta");
@@ -40,14 +40,20 @@ public class Personaje {
             this.tipo = personaje.getString("Tipo");
             this.organizacion = personaje.getString("Organizacion");
             JSONArray listaPoderes = personaje.getJSONArray("Poderes");
-            this.inteligencia = listaPoderes.getInt(0);
-            this.fuerza = listaPoderes.getInt(1);
-            this.velocidad = listaPoderes.getInt(2);
-            this.resistencia = listaPoderes.getInt(3);
-            this.proyecEnergia = listaPoderes.getInt(4);
-            this.habLucha = listaPoderes.getInt(5);
+            JSONObject poderes1 = listaPoderes.getJSONObject(0);
+            this.inteligencia = poderes1.getInt("Inteligencia");
+            this.fuerza = poderes1.getInt("Fuerza");
+            this.velocidad = poderes1.getInt("Velocidad");
+            this.resistencia = poderes1.getInt("Resistencia");
+            this.proyecEnergia = poderes1.getInt("ProyecEnergia");
+            this.habLucha = poderes1.getInt("HabLucha");
             for (int i = 0; i < 6; i++) {
-                poderes.add(i);
+                poderes.add(inteligencia);
+                poderes.add(fuerza);
+                poderes.add(velocidad);
+                poderes.add(resistencia);
+                poderes.add(proyecEnergia);
+                poderes.add(habLucha);
             }
         } catch (JSONException e) {
             e.printStackTrace();
