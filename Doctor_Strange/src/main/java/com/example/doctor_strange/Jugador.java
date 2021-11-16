@@ -46,6 +46,13 @@ public class Jugador {
             equipo.addPersonaje(id);
         }
     }
+    public void consultarPersonajes(){
+        for (int id:personajes) {
+            Personaje personaje = new Personaje(id);
+            personaje.mostrarDatos();
+            System.out.println("**************************************************");
+        }
+    }
 
     //getters && setters
     public String getUsuario() {
