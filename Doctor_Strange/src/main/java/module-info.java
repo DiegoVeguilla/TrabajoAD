@@ -2,6 +2,7 @@ module com.example.doctor_strange {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.media;
+    requires java.desktop;
 
 
     opens com.example.doctor_strange to javafx.fxml;

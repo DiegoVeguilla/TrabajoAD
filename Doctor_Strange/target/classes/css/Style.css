@@ -1,5 +1,5 @@
 .backgroundMenu{
-    -fx-background-image: url("images/Menu.jpg");
+    -fx-background-image: url("images/menu.jpg");
     -fx-background-repeat: no-repeat;
     -fx-background-size: contain;
     -fx-background-position: center;
@@ -8,7 +8,7 @@
 .backgroundInicio{
     -fx-background-image: url("images/Inicio.jpg");
     -fx-background-repeat: no-repeat;
-    -fx-background-size: cover;
+    -fx-background-size: cover, auto;
     -fx-background-position: center;
 }
 .backgroundRegistro{
@@ -23,3 +23,16 @@
     -fx-background-size: cover;
     -fx-background-position: center;
 }
+.boton {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-family: "Oldtown, fantasy";
+ }
+ .boton:hover{
+     -fx-background-color: red;
+     -fx-text-fill: White;
+     -fx-font-family: "Oldtown, fantasy";
+  }
+
+
+

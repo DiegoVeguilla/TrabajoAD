@@ -3,7 +3,6 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.effect.Glow?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
@@ -11,45 +10,42 @@
    <center>
       <VBox alignment="CENTER" BorderPane.alignment="CENTER">
          <children>
-            <Button minHeight="40.0" minWidth="300.0" mnemonicParsing="false" opacity="0.53" prefHeight="40.0" prefWidth="120.0" text="Nueva partida">
+            <Button minHeight="60.0" minWidth="300.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="120.0" style="-fx-font-size: 30;" styleClass="boton" stylesheets="@../../../css/Style.css" text="Nueva partida">
                <VBox.margin>
-                  <Insets bottom="25.0" />
+                  <Insets bottom="25.0" top="150.0" />
                </VBox.margin>
                <cursor>
                   <Cursor fx:constant="HAND" />
-               </cursor>
-               <effect>
-                  <Glow />
-               </effect></Button>
-            <Button minHeight="40.0" minWidth="330.0" mnemonicParsing="false" opacity="0.72" prefHeight="40.0" prefWidth="130.0" text="Cargar Partida">
+               </cursor></Button>
+            <Button minHeight="60.0" minWidth="330.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="130.0" style="-fx-font-size: 30;" styleClass="boton" stylesheets="@../../../css/Style.css" text="Cargar Partida">
                <VBox.margin>
                   <Insets bottom="25.0" />
                </VBox.margin>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button maxHeight="15.0" minHeight="40.0" minWidth="130.0" mnemonicParsing="false" opacity="0.93" prefHeight="40.0" text="Perfil">
+            <Button maxHeight="15.0" minHeight="60.0" minWidth="130.0" mnemonicParsing="false" prefHeight="40.0" style="-fx-font-size: 30;" styleClass="boton" stylesheets="@../../../css/Style.css" text="Perfil">
                <VBox.margin>
                   <Insets bottom="25.0" />
                </VBox.margin>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button maxHeight="65.0" minHeight="40.0" minWidth="170.0" mnemonicParsing="false" opacity="0.69" prefHeight="40.0" prefWidth="65.0" text="Ranking">
+            <Button maxHeight="65.0" minHeight="60.0" minWidth="170.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" style="-fx-font-size: 30;" styleClass="boton" stylesheets="@../../../css/Style.css" text="Ranking">
                <VBox.margin>
                   <Insets bottom="25.0" />
                </VBox.margin>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button minHeight="40.0" minWidth="350.0" mnemonicParsing="false" opacity="0.59" prefHeight="40.0" prefWidth="140.0" text="Reglas del Juego">
+            <Button minHeight="60.0" minWidth="350.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" style="-fx-font-size: 30;" styleClass="boton" stylesheets="@../../../css/Style.css" text="Reglas del Juego">
                <VBox.margin>
                   <Insets bottom="25.0" />
                </VBox.margin>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button maxHeight="15.0" minHeight="40.0" minWidth="120.0" mnemonicParsing="false" opacity="0.67" prefHeight="40.0" text="Salir">
+            <Button fx:id="exit" maxHeight="15.0" minHeight="60.0" minWidth="120.0" mnemonicParsing="false" onAction="#salir" prefHeight="40.0" style="-fx-font-size: 30;" styleClass="boton" stylesheets="@../../../css/Style.css" text="Salir">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>

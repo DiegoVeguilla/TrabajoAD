@@ -5,40 +5,33 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.application.Preloader;
-import javafx.application.Preloader.StateChangeNotification.Type;
-import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.control.ProgressBar;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.Region;
-import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
 
-import java.io.IOException;
+import java.awt.*;
 
-public class HelloApplication extends Preloader {
+
+public class HelloApplication extends Application {
 
 
     @Override
     public void start(Stage stage) throws Exception {
+        GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
+
+        int width = gd.getDisplayMode().getWidth() - 60;
+        int height = gd.getDisplayMode().getHeight() - 60;
 
         CineController cineController = new CineController();
         cineController.empezarCine(stage);
 
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("menu_view.fxml"));
-        Scene scene1 = new Scene(fxmlLoader.load(), 1920, 1080);
-        stage.setTitle("Hello!");
-        stage.setScene(scene1);
+        stage.setResizable(false);
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("inicio-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), width, height);
+        stage.setTitle("Facultativo raro");
+        stage.setScene(scene);
         stage.setFullScreen(true);
         stage.show();
+    }
 
-
-
-
-
-
-
-
+    public static void main(String[] args) {
+        launch(args);
     }
 }

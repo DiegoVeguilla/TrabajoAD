@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" styleClass="backgroundRegistro" stylesheets="@../../../css/Style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" styleClass="backgroundRegistro" stylesheets="@../../../css/Style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.doctor_strange.controllers.RegistrarseController">
    <center>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
@@ -26,7 +25,7 @@
                   <Insets bottom="50.0" right="165.0" />
                </VBox.margin>
             </TextField>
-            <Button fx:id="btnLoginR" minHeight="30.0" minWidth="68.0" mnemonicParsing="false" opacity="0.58" text="Button">
+            <Button fx:id="btnLoginR" minHeight="30.0" minWidth="68.0" mnemonicParsing="false" onAction="#login" opacity="0.0" text="Button">
                <VBox.margin>
                   <Insets right="160.0" />
                </VBox.margin>
