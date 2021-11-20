@@ -1,44 +1,39 @@
 package com.example.doctor_strange;
 
-import java.util.Locale;
-
 public class Movimiento {
     //atributos
-    Personaje personaje1, personaje2; //jugador1 -> ejecuta, jugador2 -> recibe
-    String tipo; //Ataque o defensa
-    double energiaInicial, energiaReal;
+    private Personaje personaje;
+    private String tipo; //ataque o defensa
+    private int energiaReal;
+    private boolean posible;
+
     //constructor
-    public Movimiento(String tipo, Personaje personaje, Personaje personaje2){
-        this.tipo = tipo;
-        this.personaje1=personaje1;
-        this.personaje2=personaje2;
-        if (tipo.toLowerCase().equals("ataque")){
-            //energiaReal=((personaje1.getFuerza()*0.8)+(personaje1.getVelocidad()*0.25)+(personaje1.getHabLucha()*0.75)+(personaje1.getProyecEnergia()*1));
-        }else {
-            //energiaReal=((personaje1.getInteligencia()*1)+(personaje1.getVelocidad()*0.75)+(personaje1.getHabLucha()*0.25)+(personaje1.getFuerza()*0.20));
-        }
+    public Movimiento(String tipo, int energia, Personaje personaje) {
+        do {
+            if (tipo.toLowerCase().equals("ataque")){
+                energiaReal = (int)((personaje.getFuerza()*0.8)+(personaje.getVelocidad()*0.25)+(personaje.getHabLucha()*0.75)+(personaje.getProyecEnergia()*1))*energia;
+            }else{
+                energiaReal = (int)((personaje.getInteligencia()*1)+(personaje.getVelocidad()*0.75)+(personaje.getHabLucha()*0.25)+(personaje.getFuerza()*0.20))*energia;
+            }
+            if (personaje.getEnergiaLucha()>personaje.getEnergiaLucha() || personaje.getEnergiaLucha() == energiaReal){
+                posible = true;
+            }else{
+                posible = false;
+                energia--;
+                if (energia== 0){
+                    System.out.println("Energía insuficiente para realizar un movimiento");
+                    break;
+                }
+            }
+        }while(posible==true);
     }
-
     //metodos
-    public void quitarEnergia(){
-        //modificamos la energiaLucha ejecutor del movimiento
-        personaje1.setEnergiaLucha(personaje1.getEnergiaLucha() - energiaReal);
-        //modificamos la energiaVital del receptor del movimiento
-        personaje2.setEnergiaVital(personaje2.getEnergiaVital() - energiaReal);
-    }
-
     //getters && setters
-    public Personaje getPersonaje1() {
-        return personaje1;
+    public Personaje getPersonaje() {
+        return personaje;
     }
-    public void setPersonaje1(Personaje personaje1) {
-        this.personaje1 = personaje1;
-    }
-    public Personaje getPersonaje2() {
-        return personaje2;
-    }
-    public void setPersonaje2(Personaje personaje2) {
-        this.personaje2 = personaje2;
+    public void setPersonaje(Personaje personaje) {
+        this.personaje = personaje;
     }
     public String getTipo() {
         return tipo;
@@ -46,16 +41,17 @@ public class Movimiento {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
-    public double getEnergiaInicial() {
-        return energiaInicial;
-    }
-    public void setEnergiaInicial(double energiaInicial) {
-        this.energiaInicial = energiaInicial;
-    }
-    public double getEnergiaReal() {
+    public int getEnergiaReal() {
         return energiaReal;
     }
-    public void setEnergiaReal(double energiaReal) {
+    public void setEnergiaReal(int energiaReal) {
         this.energiaReal = energiaReal;
     }
+    public boolean isPosible() {
+        return posible;
+    }
+    public void setPosible(boolean posible) {
+        this.posible = posible;
+    }
 }
+
