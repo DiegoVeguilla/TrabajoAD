@@ -19,7 +19,7 @@ public class Personaje {
     private Movimiento movimientoActual;
     private boolean vivo;
     FileReader lector = null;
-//.
+
     //constructor
     public Personaje(int id) {
         this.identificador = id-1;
