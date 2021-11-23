@@ -18,7 +18,8 @@ public class HelloApplication extends Application {
         stage.setFullScreen(true);
         stage.show();
 
-        MongoClient client = MongoClients.create("mongodb+srv://Java:java@cluster0.pyfbj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
+        //MongoClient client = MongoClients.create("mongodb+srv://Ana:ana@cluster0.pyfbj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority  ");
+        MongoClient client = MongoClients.create("mongodb+srv://Ana:ana@cluster0.pyfbj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
         MongoDatabase database = client.getDatabase("registro");
         MongoCollection collection = database.getCollection("registro");
 
