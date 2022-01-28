@@ -16,7 +16,7 @@ public class Partida {
         this.jugador2 = jugador2;
         this.escenario = escenario;
     }
-
+    public Partida(){};
     //metodos
     public void jugarPartida(){
         generarEquipo(escenario,jugador1); //generamos el equipo del jugador 1

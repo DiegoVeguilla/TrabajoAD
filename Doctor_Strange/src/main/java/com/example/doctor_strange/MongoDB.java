@@ -1,20 +1,31 @@
 package com.example.doctor_strange;
 
+import com.mongodb.ServerAddress;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.internal.MongoClientImpl;
 import org.bson.Document;
 
 public class MongoDB {
-    public static void main(String[] args) {
-        //MongoClient client = MongoClients.create("mongodb+srv://Ana:ana@cluster0.pyfbj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority  ");
-        MongoClient client = MongoClients.create("mongodb+srv://Ana:ana@cluster0.pyfbj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
-        MongoDatabase database = client.getDatabase("registro");
-        MongoCollection collection = database.getCollection("registro");
 
-        Document sampleDoc = new Document("id", "1").append("name", "Diego Veguilla");
+    MongoClient client;
 
-        collection.insertOne(sampleDoc);
+    public MongoCollection connect(String nombreDatabase, String nombreColeccion) {
+        //conexion con la base de datos y la colección que metamos por parametros
+        client = MongoClients.create("mongodb+srv://Ana:ana@cluster0.pyfbj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
+        MongoDatabase database = client.getDatabase(nombreDatabase);
+        MongoCollection collection = database.getCollection(nombreColeccion);
+        return (collection);
     }
+
+    public void disconnect(){
+        client.close();
+    }
+
+    //usuarios [nombre, apellidos, genero, fecha de nacimiento, organización, pais, provincia]
+
+    //crear usuarios
+    //leer escenarios, personajes y usuarios
 }
