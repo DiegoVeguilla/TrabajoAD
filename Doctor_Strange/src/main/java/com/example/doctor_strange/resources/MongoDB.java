@@ -10,12 +10,13 @@ public class MongoDB {
     public static void main(String[] args) {
         conexionMongo();
     }
-    public static void conexionMongo (){
-    MongoClient client = MongoClients.create("mongodb+srv://Ana:ana@cluster0.pyfbj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
-    MongoDatabase database = client.getDatabase("registro");
-    MongoCollection collection = database.getCollection("registro");
 
-    Document sampleDoc = new Document("id", "1").append("name", "Diego Veguilla");
+    public static void conexionMongo() {
+        MongoClient client = MongoClients.create("mongodb+srv://Ana:ana@cluster0.pyfbj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
+        MongoDatabase database = client.getDatabase("registro");
+        MongoCollection collection = database.getCollection("registro");
+
+        Document sampleDoc = new Document("id", "4").append("name", "Patata");
 
         collection.insertOne(sampleDoc);
     }
