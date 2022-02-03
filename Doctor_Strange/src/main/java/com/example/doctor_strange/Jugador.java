@@ -53,6 +53,7 @@ public class Jugador {
             System.out.println("**************************************************");
         }
     }
+    public void crearUsusario( ){}
 
     //getters && setters
     public String getUsuario() {

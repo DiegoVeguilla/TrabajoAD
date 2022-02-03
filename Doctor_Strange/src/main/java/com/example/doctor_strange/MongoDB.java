@@ -21,6 +21,7 @@ public class MongoDB {
     }
 
     public void disconnect(){
+        //cierra la conexión con el mongodb
         client.close();
     }
 
