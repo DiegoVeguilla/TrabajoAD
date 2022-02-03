@@ -19,4 +19,10 @@ Enunciado
 
 Ideas
 
+-cuando te registres meter el correo por si pierdes la contraseña 
+
+-enviar correo de verificación
+
+- en el menu que salga en la esquina superior derecha para saber en que usuario te has metido
+
 Ideas aprobadas
