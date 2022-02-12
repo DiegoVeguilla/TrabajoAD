@@ -3,4 +3,4 @@
 #dependencias
 node_modules
 #carpeta construida
-.dist
+dist
