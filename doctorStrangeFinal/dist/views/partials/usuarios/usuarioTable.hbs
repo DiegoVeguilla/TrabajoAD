@@ -1,0 +1,36 @@
+{{#if usuarios}}
+
+<table class="table table-bordered table-hover table-dark">
+<!--Lista de usuarios-->
+  <thead>
+    <tr>
+      <th>Num</th>
+      <th>Nombre</th>
+      <th>Correo</th>
+      <th>Operaciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each usuarios}}
+      <tr>
+        <td>{{@index}}</td> <!--numero de id-->
+        <td>{{Nombreusuario}}</td>
+        <td>{{Correo}}</td>
+        <td>
+          <!--se envia a edit y se añade identificador a url-->
+          <a href="/usuario/{{_id}}/delete" class="btn btn-danger">Delete</a>
+          <a href="/usuario/{{_id}}/edit" class="btn btn-info">Update</a> 
+        </td>
+      </tr>
+
+     
+
+    {{/each}}
+  </tbody>
+</table>
+ {{else}}
+      <div class="text-center text-white">
+        <h1>No existen usuarios</h1>
+      </div>
+{{/if}}
+

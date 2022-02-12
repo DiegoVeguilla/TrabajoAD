@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5 offset-md-3">
+      <div class="card card-body bg-dark p-4 text-white">
+
+        <div class="card card-body bg-dark p-4 text-while rounded-0">
+          <h3>UPDATE USUARIO</h3>
+          <form action="/usuario/{{usuario._id}}/edit" method="post">
+            <!--/-->
+            <!--llega a la ruta de edit pero del metodo post (1) -->
+            <input
+              type="text"
+              name="Nombreusuario"
+              placeholder="Nombre"
+              value="{{usuario.Nombreusuario}}"
+              class="form-control rounded-0 bg-dark text-white"
+            />
+            <input
+              type="text"
+              name="Correo"
+              placeholder="Correo"
+              value="{{usuario.Correo}}"
+              class="form-control rounded-0 bg-dark text-white"
+            />
+            <input
+              type="text"
+              name="Contrasenia"
+              placeholder="Contraseñia"
+              value="{{usuario.Contrasenia}}"
+              class="form-control rounded-0 bg-dark text-white"
+            />
+            <input
+              type="text"
+              name="Telefono"
+              placeholder="Teléfono"
+              value="{{usuario.Telefono}}"
+              class="form-control rounded-0 bg-dark text-white"
+            />
+            <input
+              type="text"
+              name="Genero"
+              placeholder="Género"
+              value="{{usuario.Genero}}"
+              class="form-control rounded-0 bg-dark text-white"
+            />
+            <input
+              type="text"
+              name="Pais"
+              placeholder="País"
+              value="{{usuario.Pais}}"
+              class="form-control rounded-0 bg-dark text-white"
+            />
+            <input
+              type="text"
+              name="Edad"
+              placeholder="Edad"
+              value="{{usuario.Edad}}"
+              class="form-control rounded-0 bg-dark text-white"
+            />
+            <button class="btn btn-primary m-2">Update</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
