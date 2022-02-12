@@ -31,4 +31,8 @@ app.use(express.urlencoded({extended:false}));
  
 //Routes
 app.use(indexRoutes);
+
+//static files -->se puede acceder desde el navegador
+app.use(express.static(path.join(__dirname,"public")));
+
 export default app;
