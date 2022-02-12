@@ -1,0 +1,40 @@
+<!--Formulario html-->
+<form action="/usuarios/add" method="POST">
+  <label for="title">Escribe tu usuario:</label>
+  <div>
+    <label for="Nombreusuario">Nombre de usuario:</label>
+    <input type="text" name="Nombreusuario" id="Nombreusuario" />
+  </div>
+  <div>
+    <label for="Correo">Correo:</label>
+    <input type="text" name="Correo" id="Correo" />
+  </div>
+  <div>
+    <label for="Contrasenia">Contraseña:</label>
+    <input type="password" name="Contrasenia" id="Contrasenia" />
+  </div>
+  <div>
+    <label for="Telefono">Teléfono:</label>
+    <input
+      type="number"
+      minlength="9"
+      maxlength="9"
+      name="Telefono"
+      id="Telefono"
+    />
+  </div>
+  <div>
+    <label for="Genero">Género:</label>
+    <input type="text" name="Genero" id="Genero" />
+  </div>
+  <div>
+    <label for="Pais">País:</label>
+    <input type="text" name="Pais" id="Pais" />
+  </div>
+  <div>
+    <label for="Edad">Edad:</label>
+    <input type="number" name="Edad" id="Edad" />
+
+  </div>
+  <button>Registrarse</button>
+</form>
