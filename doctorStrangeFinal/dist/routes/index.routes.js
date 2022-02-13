@@ -17,9 +17,10 @@ router.get("/", _usuarios.renderUsuario); //ruta que añade el usuario al darle 
 
 router.post("/usuarios/add", _usuarios.createUsuario); //PAGINA ABOUT
 
-router.get("/about", function (req, res) {
+/* router.get("/about", (req, res) => {
   res.render("about");
-}); //PAGINA EDIT
+}); */
+//PAGINA EDIT
 //lleva a edit --> /:id para llegar a un usuario especificio
 
 router.get("/usuario/:id/edit", _usuarios.renderUsuarioEdit); //(1) metodo para update

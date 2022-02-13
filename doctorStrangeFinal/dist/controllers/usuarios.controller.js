@@ -63,21 +63,21 @@ var createUsuario = /*#__PURE__*/function () {
           case 4:
             usuarioSaved = _context2.sent;
             console.log(usuarioSaved);
-            _context2.next = 11;
+            _context2.next = 12;
             break;
 
           case 8:
             _context2.prev = 8;
             _context2.t0 = _context2["catch"](0);
-            //el usuario ya existe
+            res.redirect("/");
             console.log(_context2.t0);
 
-          case 11:
+          case 12:
             //lo que sale cuando le das al boton registrarse
             //res.send('saved') -->me redirecciona a la página inicial
             res.redirect("/");
 
-          case 12:
+          case 13:
           case "end":
             return _context2.stop();
         }
