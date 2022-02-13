@@ -50,11 +50,17 @@
      color: #111111;
      margin: 0 
 }
+.blanco{
+     
+      color: #F9FCFB;
+}
  h1 {
      font-size: 24px 
 }
  h2 {
-     font-size: 22px 
+     font-size: 22px ;
+      color: #F9FCFB
+
 }
  h3 {
      font-size: 18px ;
@@ -220,11 +226,13 @@
      color: #114c7d;
      font-weight: 400;
      font-size: 28px;
-     background-image: url('../images/fevicon.png');
-     background-repeat: no-repeat;
-     padding-left: 55px;
+     background-image: url('../images/icono.png');
+      background-repeat: no-repeat;
+      padding-left: 55px;
      letter-spacing: -0.5px;
 }
+
+
  .small_main_heading h2 strong {
      color: #38c8a8;
      font-weight: 600;

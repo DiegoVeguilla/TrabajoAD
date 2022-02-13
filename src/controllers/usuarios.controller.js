@@ -19,14 +19,15 @@ export const createUsuario = async (req, res) => {
     console.log(usuarioSaved);
   } catch (error) {
    
-     res.redirect("/");
+    //usuario esta guardado
     
+    res.send('este usuario ya existe, si quieres utilizar este usuario haz el login desde la app')
     console.log(error);
   }
 
   //lo que sale cuando le das al boton registrarse
   //res.send('saved') -->me redirecciona a la página inicial
-  res.redirect("/");
+  //res.redirect("/");
 };
 export const renderUsuarioEdit = async (req, res) => {
   try {
