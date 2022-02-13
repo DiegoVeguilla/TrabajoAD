@@ -1,0 +1,362 @@
+@import url('lumo-css-framework/all-classes.css');
+@import url('line-awesome/dist/line-awesome/css/line-awesome.min.css');
+
+.backgroundMenu{
+    background-image: url("images/menuu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+ .backgroundInicio{
+    background-image: url("images/Inicio.jpg");
+
+       background-size: cover;
+
+
+}
+ .backgroundNuevaPartida{
+     background-image: url("images/NuevaPartidaa.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+}
+ .backgroundRegistro{
+     background-image: url("images/Registrod.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+}
+ .backgroundIniciar{
+   background-image: url("images/iniciars.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+}
+ .backgroundRanking{
+     background-image: url("images/empty-plant.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+}
+ .boton {
+    background-color: transparent;
+    color: white;
+    font-size : 30px;
+    font-family: "Oldtown, fantasy";
+ }
+ .boton:hover{
+     background-color: red;
+     color: White;
+     font-family: "Oldtown, fantasy";
+  }
+ .btnP1{
+         margin:10px;
+     background-image:url("http://i.annihil.us/u/prod/marvel/i/mg/5/f0/5261a85a501fe.jpg");
+        background-repeat: no-repeat;
+       background-size: contain;
+       background-color:black;
+       width:100px;
+       height:100px;
+
+       background-position: center;
+  }
+ .btnP2{
+           margin:10px;
+       background-image:url("http://i.annihil.us/u/prod/marvel/i/mg/6/70/5261a7d7c394b.jpg");
+          background-repeat: no-repeat;
+         background-size: contain;
+         background-color:black;
+         width:100px;
+         height:100px;
+
+         background-position: center;
+    }
+ .btnP3{
+         margin:10px;
+     background-image:url("http://i.annihil.us/u/prod/marvel/i/mg/9/c0/527bb7b37ff55.jpg");
+        background-repeat: no-repeat;
+       background-size: contain;
+       background-color:brack;
+       width:100px;
+       height:100px;
+
+       background-position: center;
+  }
+ .btnP4{
+         margin:10px;
+     background-image:url("http://i.annihil.us/u/prod/marvel/i/mg/f/60/526031dc10516.jpg");
+        background-repeat: no-repeat;
+       background-size: contain;
+       background-color:black;
+       width:100px;
+       height:100px;
+
+       background-position: center;
+  }
+ .btnP5{
+         margin:10px;
+     background-image:url("http://i.annihil.us/u/prod/marvel/i/mg/9/90/5261a86cacb99.jpg");
+        background-repeat: no-repeat;
+       background-size: contain;
+       background-color:black;
+       width:100px;
+       height:100px;
+
+       background-position: center;
+  }
+ .btnP6{
+         margin:10px;
+     background-image:url("http://i.annihil.us/u/prod/marvel/i/mg/3/50/537ba56d31087.jpg");
+        background-repeat: no-repeat;
+       background-size: contain;
+       background-color:black;
+       width:100px;
+       height:100px;
+
+       background-position: center;
+  }
+ .btnP7{
+         margin:10px;
+     background-image:url("http://i.annihil.us/u/prod/marvel/i/mg/f/30/50fecad1f395b.jpg");
+        background-repeat: no-repeat;
+       background-size: contain;
+       background-color:black;
+       width:100px;
+       height:100px;
+
+       background-position: center;
+  }
+ .btnP8{
+         margin:10px;
+     background-image:url("http://i.annihil.us/u/prod/marvel/i/mg/3/b0/5261a7e53f827.jpg");
+        background-repeat: no-repeat;
+       background-size: contain;
+       background-color:black;
+       width:100px;
+       height:100px;
+
+       background-position: center;
+  }
+ .btnP9{
+         margin:10px;
+     background-image:url("http://i.annihil.us/u/prod/marvel/i/mg/2/60/537bcaef0f6cf.jpg");
+        background-repeat: no-repeat;
+       background-size: contain;
+       background-color:black;
+       width:100px;
+       height:100px;
+
+       background-position: center;
+  }
+ .btnP10{
+         margin:10px;
+     background-image:url("http://i.annihil.us/u/prod/marvel/i/mg/f/d0/528d3412090b4.jpg");
+        background-repeat: no-repeat;
+       background-size: contain;
+       background-color:black;
+       width:100px;
+       height:100px;
+
+       background-position: center;
+  }
+ .btnP11{
+         margin:10px;
+     background-image:url("http://i.annihil.us/u/prod/marvel/i/mg/6/40/526963dad214d.jpg");
+        background-repeat: no-repeat;
+       background-size: contain;
+       background-color:black;
+       width:100px;
+       height:100px;
+
+       background-position: center;
+  }
+ .btnP12{
+         margin:10px;
+     background-image:url("http://i.annihil.us/u/prod/marvel/i/mg/9/03/5239b59f49020.jpg");
+        background-repeat: no-repeat;
+       background-size: contain;
+       background-color:black;
+       width:100px;
+       height:100px;
+
+       background-position: center;
+  }
+ .btnP13{
+         margin:10px;
+     background-image:url("http://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0.jpg");
+        background-repeat: no-repeat;
+       background-size: contain;
+       background-color:black;
+       width:100px;
+       height:100px;
+
+       background-position: center;
+  }
+ .btnP14{
+         margin:10px;
+     background-image:url("http://i.annihil.us/u/prod/marvel/i/mg/6/80/5269608c1be7a.jpg");
+        background-repeat: no-repeat;
+       background-size: contain;
+       background-color:black;
+       width:100px;
+       height:100px;
+
+       background-position: center;
+  }
+ .btnP15{
+         margin:10px;
+     background-image:url("http://i.annihil.us/u/prod/marvel/i/mg/8/d0/523214b8ea2cf.jpg");
+        background-repeat: no-repeat;
+       background-size: contain;
+       background-color:black;
+       width:100px;
+       height:100px;
+
+       background-position: center;
+  }
+ .btnP16{
+         margin:10px;
+     background-image:url("http://i.annihil.us/u/prod/marvel/i/mg/d/d0/5269657a74350.jpg");
+        background-repeat: no-repeat;
+       background-size: contain;
+       background-color:black;
+       width:100px;
+       height:100px;
+
+       background-position: center;
+  }
+ .btnP17{
+         margin:10px;
+     background-image:url("http://i.annihil.us/u/prod/marvel/i/mg/7/00/545a82f59dd73.jpg");
+        background-repeat: no-repeat;
+       background-size: contain;
+       background-color:black;
+       width:100px;
+       height:100px;
+
+       background-position: center;
+  }
+ .image{
+
+         margin:10px;
+         background-repeat: no-repeat;
+         background-size: contain;
+         background-color:black;
+         width:140px;
+         height:140px;
+
+         background-position: center
+  }
+   .image2{
+
+           margin:10px;
+           background-repeat: no-repeat;
+           background-size: contain;
+           background-color:black;
+           width:200px;
+           height:200px;
+
+           background-position: center
+    }
+   .backgroundEscenarios{
+       background-image: url("https://i.redd.it/tn0k20exrnb51.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+
+  }
+
+
+  .escenarios{
+           width:500px;
+                 height:200px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+}
+  .escenarios1{
+   background-image: url("https://64.media.tumblr.com/72c345dce0fcd13cf17bdaeffb9a8db3/tumblr_inline_pjzqzunJBH1qjov8m_1280.jpg");
+           width:500px;
+                 height:200px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+}
+.escenarios2{
+ background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8c361645-11b7-4abc-8219-1d7a2882801e/ddunbqq-bf532d2d-d078-4ec2-9dd8-075ef9059871.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhjMzYxNjQ1LTExYjctNGFiYy04MjE5LTFkN2EyODgyODAxZVwvZGR1bmJxcS1iZjUzMmQyZC1kMDc4LTRlYzItOWRkOC0wNzVlZjkwNTk4NzEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JTKEEymOvQgoU3mmCAt64AcSgP53THL6H8lU0smXciY");
+            width:500px;
+                  height:200px;
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-position: center;
+
+ }
+   .escenarios3{
+  background-image: url("https://scontent-mad1-1.xx.fbcdn.net/v/t1.6435-9/c0.26.1920.1002a/s843x403/41665391_2347907558569362_2324370317012631552_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=e3f864&_nc_ohc=01MlL0xTUi8AX_8sHo5&_nc_ht=scontent-mad1-1.xx&oh=00_AT8PNN0THOIA_fe5S16qEYGTCc0zDMkLfG9yPiXHvdmnmg&oe=622BCE86");
+             width:500px;
+                   height:200px;
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;
+
+  }
+  .escenarios4{
+   background-image: url("https://fotografias.lasexta.com/clipping/cmsimages01/2018/03/13/A5F01FC9-5ED6-4E59-9176-687D5F411435/98.jpg?crop=1920,1080,x65,y0&width=1900&height=1069&optimize=high&format=webply");
+              width:500px;
+                    height:200px;
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-position: center;
+
+   }
+     .escenarios5{
+                 width:700px;
+                       height:300px;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+
+      }
+.monedas{
+
+color:white;
+
+
+}
+.personajeSeleccionado{
+
+
+         margin:10px;
+        background-repeat: no-repeat;
+       background-size: contain;
+
+       width:250px;
+       height:250px;
+
+
+  }
+  .btnAtqDfn{
+
+
+           margin:10px;
+            background-color:white
+
+
+
+    }
+      .escenarios6{
+                     width:500px;
+                           height:200px;
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      background-position: center;
+
+          }
+
