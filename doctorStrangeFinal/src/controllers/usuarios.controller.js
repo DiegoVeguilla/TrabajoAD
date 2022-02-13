@@ -1,5 +1,6 @@
 import Usuario from "../models/Usuario";
 
+
 //si quiero solicitar un dato metodo get
 //si quiero guardar un dato metodo post
 
@@ -17,7 +18,9 @@ export const createUsuario = async (req, res) => {
     const usuarioSaved = await usuario.save();
     console.log(usuarioSaved);
   } catch (error) {
-    //el usuario ya existe
+   
+     res.redirect("/");
+    
     console.log(error);
   }
 

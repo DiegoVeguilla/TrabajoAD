@@ -20,9 +20,11 @@ router.get("/", renderUsuario);
 router.post("/usuarios/add", createUsuario);
 
 //PAGINA ABOUT
-router.get("/about", (req, res) => {
+/* router.get("/about", (req, res) => {
   res.render("about");
-});
+}); */
+
+
 
 //PAGINA EDIT
 //lleva a edit --> /:id para llegar a un usuario especificio
