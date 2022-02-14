@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <!-- Vaadin project from https://start.vaadin.com/project/0a027636-38f5-49df-85b6-00bcf1c63b14 -->
     <groupId>com.example.application</groupId>
@@ -203,6 +204,34 @@
                 It also creates webpack.config.js if not exists yet.
             -->
             <plugin>
+                <groupId>com.github.eirslett</groupId>
+                <artifactId>frontend-maven-plugin</artifactId>
+                <version>1.9.1</version>
+                <executions>
+                    <execution>
+                        <id>install node and npm</id>
+                        <goals>
+                            <goal>install-node-and-npm</goal>
+                        </goals>
+                        <phase>generate-resources</phase>
+                    </execution>
+                </executions>
+                <configuration>
+                    <nodeVersion>v16.13.2</nodeVersion>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.heroku.sdk</groupId>
+                <artifactId>heroku-maven-plugin</artifactId>
+                <version>2.0.13</version>
+                <configuration>
+                    <appName>doctorstrangeaplicacion</appName>
+                    <processTypes>
+                        <web>java $JAVA_OPTS -jar target/vaadin-heroku-2.0-SNAPSHOT.jar --server.port=$PORT</web>
+                    </processTypes>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>com.vaadin</groupId>
                 <artifactId>vaadin-maven-plugin</artifactId>
                 <version>${vaadin.version}</version>
@@ -234,7 +263,9 @@
                 <executions>
                     <execution>
                         <phase>package</phase>
-                        <goals><goal>copy</goal></goals>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
@@ -264,6 +295,7 @@
                         <executions>
                             <execution>
                                 <goals>
+                                    <goal>prepare-frontend</goal>
                                     <goal>build-frontend</goal>
                                 </goals>
                                 <phase>compile</phase>
@@ -302,7 +334,6 @@
                             </execution>
                         </executions>
                     </plugin>
-
                     <!-- Runs the integration tests (*IT) after the server is started -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
@@ -319,27 +350,6 @@
                             <trimStackTrace>false</trimStackTrace>
                             <enableAssertions>true</enableAssertions>
                         </configuration>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-dependency-plugin</artifactId>
-                        <version>3.0.2</version>
-                        <executions>
-                            <execution>
-                                <phase>package</phase>
-                                <goals><goal>copy</goal></goals>
-                                <configuration>
-                                    <artifactItems>
-                                        <artifactItem>
-                                            <groupId>com.github.jsimone</groupId>
-                                            <artifactId>webapp-runner</artifactId>
-                                            <version>8.5.31.0</version>
-                                            <destFileName>webapp-runner.jar</destFileName>
-                                        </artifactItem>
-                                    </artifactItems>
-                                </configuration>
-                            </execution>
-                        </executions>
                     </plugin>
                 </plugins>
             </build>
