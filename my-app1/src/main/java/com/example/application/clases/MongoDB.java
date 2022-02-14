@@ -50,7 +50,6 @@ public class MongoDB {
         return new Personaje(identificador, alias, identidadSecreta, organizacion, tipo, origen, url, inteligencia, fuerza, velocidad, resistencia, proyecEnergia, habLucha);
 
     }
-
     public Escenario buscarEscenario(String id) {
         MongoCollection<Document> col = conectar("escenarios").getCollection("escenarios");
         Document findDocument = new Document("Identificador", id);
@@ -70,7 +69,6 @@ public class MongoDB {
         return new Escenario(identificador, nombre, numIntegrantes, numMovimientos, energiaVital, url, monedas);
 
     }
-
     public Jugador crearUsuario(String usuario, String correo, String contrasenia, String genero, String pais, String edad, String telefono) {
         int victorias = 0;
         MongoCollection<Document> col = conectar("usuarios").getCollection("usuarios");
@@ -88,7 +86,6 @@ public class MongoDB {
         notification.addThemeVariants(NotificationVariant.LUMO_SUCCESS);
         return new Jugador(usuario, correo, contrasenia, genero, pais, edad, telefono, victorias);
     }
-
     public boolean existeUsuario(String usuario) {
         MongoCollection<Document> col = conectar("usuarios").getCollection("usuarios");
         Document findDocument = new Document("Nombreusuario", usuario);
@@ -104,7 +101,6 @@ public class MongoDB {
             return false;
         }
     }
-
     public Jugador buscarUsuario(String usuario, String contrasenia) {
         inicializarVictorias();
         MongoCollection<Document> col = conectar("usuarios").getCollection("usuarios");
@@ -131,7 +127,6 @@ public class MongoDB {
             return null;
         }
     }
-
     public void guardarPartida(Jugador ganador, Jugador perdedor, Equipo equipoGanador, Equipo equipoPerdedor, Escenario escenario, Boolean empate) {
         MongoCollection<Document> col = conectar("partida").getCollection("partida");
         Document document = new Document("Ganador", ganador.getUsuario()).
@@ -143,7 +138,6 @@ public class MongoDB {
         col.insertOne(document);
         desconectar();
     }
-
     public ArrayList<Jugador> ordenarPorVictorias() {
         inicializarVictorias();
         ArrayList<Jugador> ranking = new ArrayList<>();
@@ -168,7 +162,6 @@ public class MongoDB {
         desconectar();
         return ranking;
     }
-
     public void inicializarVictorias() {
         MongoCollection<Document> col = conectar("usuarios").getCollection("usuarios");
         Document sortingDocument = new Document("Nombreusuario", 1);

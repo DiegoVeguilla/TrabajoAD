@@ -20,27 +20,15 @@ public class ReglasView extends VerticalLayout {
     Label txtReglas;
     public ReglasView() {
 
-        //instancias();
         escribirTxt();
         setSpacing(false);
 
-
-
         add(txtReglas);
-
 
         setSizeFull();
         setJustifyContentMode(JustifyContentMode.CENTER);
         setDefaultHorizontalComponentAlignment(Alignment.CENTER);
         getStyle().set("text-align", "center");
-    }
-
-    private void instancias() {
-        TextArea textArea = new TextArea();
-        textArea.setWidthFull();
-        textArea.setLabel("Description");
-
-        add(textArea);
     }
 
     private void escribirTxt() {
@@ -63,7 +51,7 @@ public class ReglasView extends VerticalLayout {
             }finally {
                 System.out.println(reglas);
             }
-             txtReglas = new Label(reglas);
+            txtReglas = new Label(reglas);
 
             txtReglas.setMaxWidth("400px");
             txtReglas.setMinWidth("400px");

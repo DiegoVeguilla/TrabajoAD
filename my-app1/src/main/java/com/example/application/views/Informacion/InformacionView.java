@@ -20,7 +20,6 @@ public class InformacionView extends VerticalLayout {
     Label txtInformacion;
     public InformacionView() {
 
-        //instancias();
         escribirTxt();
         setSpacing(false);
 
@@ -33,14 +32,6 @@ public class InformacionView extends VerticalLayout {
         setJustifyContentMode(JustifyContentMode.CENTER);
         setDefaultHorizontalComponentAlignment(Alignment.CENTER);
         getStyle().set("text-align", "center");
-    }
-
-    private void instancias() {
-        TextArea textArea = new TextArea();
-        textArea.setWidthFull();
-        textArea.setLabel("Description");
-
-        add(textArea);
     }
 
     private void escribirTxt() {
