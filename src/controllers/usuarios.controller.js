@@ -17,6 +17,7 @@ export const createUsuario = async (req, res) => {
     const usuario = Usuario(req.body);
     const usuarioSaved = await usuario.save();
     console.log(usuarioSaved);
+    res.redirect("/");
   } catch (error) {
    
     //usuario esta guardado
