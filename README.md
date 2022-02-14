@@ -6,7 +6,7 @@ Participantes
 
 Mario Muñoz --> Jefe de Front end
 
-Laura Paniagua --> Teaster
+Laura Paniagua --> Tester
 
 Ana Valero --> Lider
 
